@@ -347,7 +347,6 @@ body {
     border-color: #e882e8;
   }
   .fab:hover {
-    color: #e882e8;
     cursor: pointer;
     border-color: #e882e8;
   }
@@ -355,5 +354,9 @@ body {
     font-size: 1.8rem;
     top: 9px;
   }
+}
+
+.icon-hover {
+  color: #e882e8;
 }
 /*# sourceMappingURL=style.css.map */

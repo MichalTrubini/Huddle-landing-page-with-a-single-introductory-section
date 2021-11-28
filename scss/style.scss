@@ -183,7 +183,6 @@ body {
     }
 
     .fab:hover {
-        color:$background-link-hover;
         cursor: pointer;
         border-color: $background-link-hover;
     }
@@ -192,4 +191,8 @@ body {
         font-size:1.8rem;
         top:9px;
     }
+  }
+
+  .icon-hover {
+    color:$background-link-hover;
   }
