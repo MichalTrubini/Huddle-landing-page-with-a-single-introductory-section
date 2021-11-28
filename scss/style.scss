@@ -1,0 +1,109 @@
+@import'normalize','variables','settings';
+
+body {
+    background:url(../images/bg-mobile.svg) no-repeat;
+    background-color:$background-main;
+    color:$color-text;
+    font-family: 'Open Sans', sans-serif;
+    font-size:1.6rem;
+    text-align: center;
+}
+
+.main, header {
+    padding:3.5rem;
+    margin:auto;
+    max-width:120rem;
+}
+
+.logo {
+    display:block;
+    width:137px;
+}
+
+.content {
+    margin-top:6rem;
+
+    &__heading {
+        font-family: 'Poppins', sans-serif;
+        line-height: 3.2rem;
+    }
+
+    &__text {
+        font-size:1.6rem;
+        line-height: 2.5rem;
+        margin:1.5rem 0 3rem;
+    }
+
+    &__register {
+        background:$background-link;
+        border-radius: 2rem;
+        display:block;
+        font-size:1.2rem;
+        line-height:4rem;
+        margin:auto;
+        margin-bottom:4rem;
+        width:20rem;
+    }
+}
+
+.fab + .fab {
+    margin-left:1rem;
+}
+
+.fab {
+    font-size: 1.5rem;
+    border:2px solid white;
+    border-radius:100%;
+    padding:1rem;
+}
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(177, 65%, 81%); }
+
+  @media screen and (min-width:700px) {
+
+        body {
+            background:url(../images/bg-desktop.svg) no-repeat;
+            background-color: $background-main;
+        }
+
+      .main {
+          @include flexCenter(row);
+          align-items: flex-start;
+      }
+
+      .site-image {
+          margin-right:3rem;
+          width:60%;
+      }
+
+      .content {
+          text-align:left;
+          width:40%;
+
+          &__register {
+              margin:0;
+              text-align: center;
+          }
+
+          &__register:hover {
+              background: $background-link-hover;
+              box-shadow: 0px 0px 10px hsl(257, 76%, 15%);
+              color:$color-text;
+          }
+      }
+
+      .fab:hover {
+          color:$background-link-hover;
+          cursor: pointer;
+          border-color: $background-link-hover;
+      }
+
+      .fab {
+          font-size:2rem;
+      }
+
+      .social {
+          margin-top:calc(10vw);
+          text-align: right;
+      }
+  }
